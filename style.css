@@ -190,6 +190,7 @@ button:hover {
   background-color: #A1A1AA;
   font-size: 15px;
   font-weight: 900;
+  border-radius: 25px;
 }
 
 /* -----------------------content CSS --------------------*/
