@@ -9,7 +9,11 @@
 li {
   list-style: none;
 }
- 
+
+button:hover {
+  color: white;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -86,6 +90,8 @@ li {
   grid-column: 2;
   grid-row: 1;
   background-color: #E4E4E7;
+  box-shadow: 1px 5px 10px rgb(201, 201, 201);
+  margin-bottom: 5px;
 }
 
 .searchbar, .profile, .welcome, .upload {
@@ -97,6 +103,12 @@ li {
 .searchbar img {
   height: 20px;
   width: 20px;
+}
+
+.header input {
+  border-radius: 14px;
+  border: none;
+  height: 30px;
 }
 
 .searchbar {
@@ -183,7 +195,7 @@ li {
 /* -----------------------content CSS --------------------*/
 .content {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr .6fr;
   grid-template-rows: 1fr 1fr;
   grid-column: 2;
   grid-row: 2 / 6;
@@ -220,9 +232,19 @@ li {
   border-radius: 10px;
   box-shadow: #1E293B -7px 0px 0px 0px;
   padding: 10px;
-  justify-content: center;
   align-items: center;
-  /* box-shadow: #b6b6b6 0px 10px 0px 0px; */
+  overflow: scroll;
+}
+
+.cardheader {
+  font-size: large;
+  font-weight: 900;
+  margin-top: 15px;
+}
+
+.cardcontent {
+  font-size: 15px;
+  color: #475569;
 }
 
 .socialicons {
@@ -258,8 +280,33 @@ li {
 .announcements {
   display: grid;
   grid-row: 2;
+  grid-template-rows: 1fr 1fr 1fr;
   background-color: #E4E4E7;
   border-radius: 10px;
+}
+
+.announcement {
+  margin-left: 15px;
+  margin-right: 15px;
+  border-top: 1px #A1A1AA solid;
+  padding: 10px;
+  overflow: scroll;
+}
+
+.one {
+  border: none;
+}
+
+.announcehead {
+  margin: 3px;
+  font-size: large;
+  font-weight: 900;
+}
+
+.announcecontent {
+  margin: 3px;
+  font-size: 13px;
+  color: #475569;
 }
 
 .trendheader {
@@ -268,12 +315,75 @@ li {
   font-weight: 900;
 }
 
+
 .trending {
   display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
   grid-row: 4;
   background-color: #E4E4E7;
   border-radius: 10px;
+  align-items: center;
+  overflow: scroll;
 }
 
-.trend, .announcement{
+.trending img {
+  display: grid;
+  height: 40px;
+  width: 40px;
+  margin-left: 30px;  
+}
+
+.tags {
+  font-size: 14px;
+}
+
+.taginfo {
+  font-size: 12px;
+  color: #475569;
+}
+
+.trend {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.ichi {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.ni {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.san {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.yon {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.hamsterone {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.hamstertwo {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.hamsterthree {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.hamsterfour {
+  grid-column: 1;
+  grid-row: 4;
 }
